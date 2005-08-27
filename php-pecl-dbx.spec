@@ -35,8 +35,8 @@ In PECL status of this extension is: %{_status}.
 %description -l pl
 Modu³ dbx to warstwa abstrakcji baz danych. Funkcje dbx pozwalaj± na
 dostêp do wspieranych baz danych przy u¿yciu spójnej konwencji.
-Funkcje dbx jako takie s± interfejsem bazy danych, ale interfejsem
-modu³ów do obs³ugi baz danych.
+Funkcje dbx jako takie nie s± bezpo¶rednim interfejsem do bazy danych,
+ale interfejsem do modu³ów do obs³ugi baz danych.
 
 Aktualnie wspierane bazy danych to MySQL, ODBC, Oracle (oci8), MS SQL
 Server, PostgreSQL, FrontBase, Sybase-CT oraz SQLite.
