@@ -6,7 +6,7 @@ Summary:	%{_modname} - database abstraction functions
 Summary(pl):	%{_modname} - funkcje abstrakcji baz danych
 Name:		php-pecl-%{_modname}
 Version:	1.1.0
-Release:	5
+Release:	6
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pecl.php.net/get/%{_modname}-%{version}.tgz
@@ -16,7 +16,7 @@ BuildRequires:	php-devel >= 3:5.0.0
 BuildRequires:	rpmbuild(macros) >= 1.254
 %{?requires_php_extension}
 Requires:	%{_sysconfdir}/conf.d
-Obsoletes:	php-pear-%{_modname}
+Obsoletes:	php-%{_modname}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
