@@ -1,7 +1,7 @@
 %define		_modname	dbx
 %define		_status		stable
 Summary:	%{_modname} - database abstraction functions
-Summary(pl):	%{_modname} - funkcje abstrakcji baz danych
+Summary(pl.UTF-8):   %{_modname} - funkcje abstrakcji baz danych
 Name:		php-pecl-%{_modname}
 Version:	1.1.0
 Release:	7
@@ -29,11 +29,11 @@ SQL Server, PostgreSQL, FrontBase, Sybase-CT and SQLite.
 
 In PECL status of this extension is: %{_status}.
 
-%description -l pl
-Modu≥ dbx to warstwa abstrakcji baz danych. Funkcje dbx pozwalaj± na
-dostÍp do wspieranych baz danych przy uøyciu spÛjnej konwencji.
-Funkcje dbx jako takie nie s± bezpo∂rednim interfejsem do bazy danych,
-ale interfejsem do modu≥Ûw do obs≥ugi baz danych.
+%description -l pl.UTF-8
+Modu≈Ç dbx to warstwa abstrakcji baz danych. Funkcje dbx pozwalajƒÖ na
+dostƒôp do wspieranych baz danych przy u≈ºyciu sp√≥jnej konwencji.
+Funkcje dbx jako takie nie sƒÖ bezpo≈õrednim interfejsem do bazy danych,
+ale interfejsem do modu≈Ç√≥w do obs≈Çugi baz danych.
 
 Aktualnie wspierane bazy danych to MySQL, ODBC, Oracle (oci8), MS SQL
 Server, PostgreSQL, FrontBase, Sybase-CT oraz SQLite.
