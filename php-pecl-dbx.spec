@@ -1,7 +1,7 @@
 %define		_modname	dbx
 %define		_status		stable
 Summary:	%{_modname} - database abstraction functions
-Summary(pl.UTF-8):   %{_modname} - funkcje abstrakcji baz danych
+Summary(pl.UTF-8):	%{_modname} - funkcje abstrakcji baz danych
 Name:		php-pecl-%{_modname}
 Version:	1.1.0
 Release:	7
