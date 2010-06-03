@@ -10,11 +10,10 @@ Group:		Development/Languages/PHP
 Source0:	http://pecl.php.net/get/%{modname}-1.1.0.tgz
 # Source0-md5:	82d1091c75e047c4a8f9aea7b279e13b
 URL:		http://pecl.php.net/package/dbx/
-Patch0:	branch.diff
-BuildRequires:	php-devel >= 3:5.0.0
+Patch0:		branch.diff
+BuildRequires:	php-devel >= 4:5.0.4
 BuildRequires:	rpmbuild(macros) >= 1.344
 %{?requires_php_extension}
-Requires:	php-common >= 4:5.0.4
 Obsoletes:	php-dbx
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
