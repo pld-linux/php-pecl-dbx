@@ -1,8 +1,9 @@
+%define		php_name	php%{?php_suffix}
 %define		modname	dbx
 %define		status		stable
 Summary:	%{modname} - database abstraction functions
 Summary(pl.UTF-8):	%{modname} - funkcje abstrakcji baz danych
-Name:		php-pecl-%{modname}
+Name:		%{php_name}-pecl-%{modname}
 Version:	1.1.1
 Release:	3
 License:	PHP 2.02
@@ -11,8 +12,8 @@ Source0:	http://pecl.php.net/get/%{modname}-1.1.0.tgz
 # Source0-md5:	82d1091c75e047c4a8f9aea7b279e13b
 URL:		http://pecl.php.net/package/dbx/
 Patch0:		branch.diff
-BuildRequires:	php-devel >= 4:5.0.4
-BuildRequires:	rpmbuild(macros) >= 1.344
+BuildRequires:	%{php_name}-devel >= 4:5.0.4
+BuildRequires:	rpmbuild(macros) >= 1.650
 %{?requires_php_extension}
 Obsoletes:	php-dbx
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
