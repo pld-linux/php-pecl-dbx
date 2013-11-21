@@ -4,14 +4,13 @@
 Summary:	%{modname} - database abstraction functions
 Summary(pl.UTF-8):	%{modname} - funkcje abstrakcji baz danych
 Name:		%{php_name}-pecl-%{modname}
-Version:	1.1.1
-Release:	3
+Version:	1.1.2
+Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
-Source0:	http://pecl.php.net/get/%{modname}-1.1.0.tgz
-# Source0-md5:	82d1091c75e047c4a8f9aea7b279e13b
+Source0:	http://pecl.php.net/get/%{modname}-%{version}.tgz
+# Source0-md5:	8cac1af119e6afa519853bfd3a911bbb
 URL:		http://pecl.php.net/package/dbx/
-Patch0:		branch.diff
 BuildRequires:	%{php_name}-devel >= 4:5.0.4
 BuildRequires:	rpmbuild(macros) >= 1.650
 %{?requires_php_extension}
@@ -44,7 +43,6 @@ To rozszerzenie ma w PECL status: %{status}.
 %prep
 %setup -qc
 mv %{modname}-*/* .
-%patch0 -p0
 
 %build
 phpize
